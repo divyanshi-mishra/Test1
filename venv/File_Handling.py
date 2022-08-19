@@ -1,0 +1,13 @@
+h=open('hhrr.txt', 'w')
+print(h.write("Hello"))
+print(h.write("  "))
+print(h.write("world"))
+print(h.write("  "))
+r=open("hhrr.txt", "a")
+print(r.write("My name is Divyanshi and here I am "))
+h.close()
+r.close()
+b=open('hhrr.txt', 'r')
+a=open('hhrr_copy.txt', 'w')
+for data in b:
+    a.write(data)
